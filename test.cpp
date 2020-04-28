@@ -35,7 +35,6 @@ void PrintTable(lua_State *L)
     }
 }
 
-/*
 int main(void)
 {
     lua_State *L = lua_open();
@@ -81,4 +80,3 @@ int main(void)
 
     return 0;
 }
- */

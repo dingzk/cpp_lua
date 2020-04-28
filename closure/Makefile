@@ -7,7 +7,7 @@ LDFLAGS=-L../lib -L/data1/apache2/htdocs/LuaJIT/src/ -lluajit -Wl,-rpath,../lib:
 SRC=$(wildcard *.cpp)
 OBJS=$(subst .cpp,.o,${SRC})
 
-TARGET=cpp_use_lua
+TARGET=test
 
 CC=g++
 

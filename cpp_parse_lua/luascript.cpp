@@ -37,6 +37,11 @@ static int foo (lua_State *L) {
     return 2;                   /* number of results */
 }
 
+/*
+ * Any function registered with Lua must have this same prototype, defined as lua_CFunction in lua.h:
+typedef int (*lua_CFunction) (lua_State *L);
+ */
+
 // In Lua 5.0 reference manual is a table traversal example at page 29.
 void LuaScript::printTable(lua_State *L) {
     lua_pushnil(L);
